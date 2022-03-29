@@ -6,21 +6,33 @@ export const theme = {
     lg: '1200px',
     xl: '1536px',
   },
+  colors: {
+    brightBrown: '#655c56;',
+    white: '#fff',
+  },
+  spacing: {
+    xs: '0.5rem',
+    sm: '1rem',
+    md: '1.5rem',
+    lg: '2rem',
+    xlg: '3rem',
+    xxl: '3.375rem',
+  },
   font: {
     family: `'Lato', Fallback, sans-serif`,
     size: {
       paragraph: {
-        p1: '18px',
-        p2: '16px',
-        p3: '14px',
-        p4: '12px',
+        p1: '1.125rem',
+        p2: '1rem',
+        p3: '0.875rem',
+        p4: '0.75rem',
       },
       header: {
-        h1: '36px',
-        h2: '28px',
-        h3: '24px',
-        h4: '22px',
-        h5: '18px',
+        h1: '2.25rem',
+        h2: '1.75rem',
+        h3: '1.5rem',
+        h4: '1.375rem',
+        h5: '1.125rem',
       },
     },
     weight: {
