@@ -1,0 +1,6 @@
+**/dist/**/*.js
+.local_assets/**/*
+**/node_modules/**/*
+assets/**/*
+_temp
+public/vendor

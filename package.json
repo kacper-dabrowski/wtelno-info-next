@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier -c .prettierrc \"./**/*.{ts,tsx,js,jsx,yml}\"",
+    "format:fix": "npm run format -- --write"
   },
   "dependencies": {
     "next": "12.1.2",
