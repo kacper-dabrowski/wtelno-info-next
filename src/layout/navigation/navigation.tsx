@@ -2,10 +2,10 @@ import React, { FC, useMemo, useState } from 'react';
 import { Backdrop } from './backdrop/backdrop';
 import * as Styles from './navigation.styles';
 import { NavigationItem } from './navigationItem/navigationItem';
-import logo from '../../assets/wtelno-tree.svg';
+import logo from '../../../assets/wtelno-tree.svg';
 import Hamburger from 'hamburger-react';
 import { useTheme } from '@emotion/react';
-import { config } from '../../shared/config';
+import { config } from '../../../shared/config';
 import Link from 'next/link';
 
 export const NavigationBar: FC = () => {
