@@ -1,7 +1,8 @@
 import type { NextPage } from 'next';
+import { OneColLayout } from '../src/layout/oneColLayout';
 
 const Home: NextPage = () => {
-  return <div>Hello world!</div>;
+  return <OneColLayout renderContent={() => <div>Hello world!</div>} />;
 };
 
 export default Home;
