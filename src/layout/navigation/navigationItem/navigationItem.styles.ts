@@ -15,6 +15,7 @@ export const NavigationItem = styled.a<NavigationItemProps>`
   text-decoration: none;
   padding: ${({ theme }) => theme.spacing.xs};
   margin: ${({ theme }) => theme.spacing.xs} 0;
+  transition: ease-in-out 0.2s;
   ${applyLevelStyles}
 
   &:hover {
