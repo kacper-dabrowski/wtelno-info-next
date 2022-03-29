@@ -1,15 +1,6 @@
 import type { NextPage } from 'next';
-import { OneColLayout } from '../src/layout/oneColLayout';
-import { ParsedContent } from '../src/parsedContent/parsedContent';
+import { PageContainer } from '../src/page/pageContainer';
 
-const Home: NextPage = () => {
-  return (
-    <OneColLayout
-      renderContent={() => (
-        <ParsedContent content="My favorite search engine is [Duck Duck Go](https://duckduckgo.com)." />
-      )}
-    />
-  );
-};
+const Home: NextPage = () => <PageContainer />;
 
 export default Home;
