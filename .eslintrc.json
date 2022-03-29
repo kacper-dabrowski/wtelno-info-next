@@ -26,6 +26,7 @@
         ]
     },
     "globals": {
-        "React": "writable"
+        "React": "writable",
+        "JSX": true
     }
 }
