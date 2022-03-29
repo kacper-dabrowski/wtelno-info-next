@@ -1,7 +1,12 @@
 import type { AppProps } from 'next/app';
+import { StylesProvider } from '../src/styles/StylesProvider';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <StylesProvider>
+      <Component {...pageProps} />
+    </StylesProvider>
+  );
 }
 
 export default MyApp;
