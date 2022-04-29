@@ -7,7 +7,7 @@ export const theme = {
     xl: '1536px',
   },
   colors: {
-    brightBrown: '#655c56;',
+    brightBrown: '#655c56',
     white: '#fff',
   },
   spacing: {
