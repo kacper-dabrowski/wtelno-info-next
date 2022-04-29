@@ -1,12 +1,12 @@
+import { useTheme } from '@emotion/react';
+import Hamburger from 'hamburger-react';
+import Link from 'next/link';
 import React, { FC, useMemo, useState } from 'react';
+import logo from '../../../public/assets/wtelno-tree.svg';
+import { config } from '../../../shared/config';
 import { Backdrop } from './backdrop/backdrop';
 import * as Styles from './navigation.styles';
 import { NavigationItem } from './navigationItem/navigationItem';
-import logo from '../../../assets/wtelno-tree.svg';
-import Hamburger from 'hamburger-react';
-import { useTheme } from '@emotion/react';
-import { config } from '../../../shared/config';
-import Link from 'next/link';
 
 export const NavigationBar: FC = () => {
   const [isActive, setIsActive] = useState(false);
@@ -21,12 +21,13 @@ export const NavigationBar: FC = () => {
   };
 
   const mappedRoutes = useMemo(mapRoutesToLinks, []);
+  const hamburgerColor = isActive ? colors.brightBrown : colors.white;
 
   return (
     <>
       <Backdrop onClick={hideSideDrawer} show={isActive} />
       <Styles.HamburgerWrapper>
-        <Hamburger onToggle={toggleSideDrawer} toggled={isActive} color={colors.brightBrown} />
+        <Hamburger onToggle={toggleSideDrawer} toggled={isActive} color={hamburgerColor} />
       </Styles.HamburgerWrapper>
       <Styles.SideDrawer isActive={isActive}>
         <Link href="/" passHref>
