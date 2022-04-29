@@ -15,7 +15,7 @@ export const SideDrawer = styled.nav<SideDrawerProps>`
   top: 0;
   right: 0;
   z-index: 101;
-  background-color: ${({ isActive }) => (isActive ? `white` : `transparent`)};
+  background-color: white;
   padding: 2rem 1rem;
   box-sizing: border-box;
   transition: transform 0.2s ease-in-out;
